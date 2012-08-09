@@ -1,0 +1,8 @@
+/* CSS Document */
+
+div#menu-minhaconta ul {}
+div#menu-minhaconta ul li {display:inline-block; float:left} 
+div#menu-minhaconta ul li a { color:#416203; text-decoration:none; padding:10px 10px 8px;display:inline-block; font-size:14px;}
+
+div#menu-minhaconta ul li a.actived { color:#c5ea1d; background:#4d7306}
+div#menu-minhaconta ul li a:hover { color:#c5ea1d; background:#446603; text-decoration:none;}

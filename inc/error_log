@@ -1,0 +1,17 @@
+[28-Apr-2012 02:07:35] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoes.php on line 3
+[28-Apr-2012 02:07:35] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoesbkp-12042012.php on line 3
+[28-Apr-2012 02:10:21] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoes.php on line 3
+[28-Apr-2012 02:10:22] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoes.php on line 3
+[28-Apr-2012 02:10:22] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoes.php on line 3
+[28-Apr-2012 02:10:35] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoesbkp-12042012.php on line 3
+[28-Apr-2012 02:10:35] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoesbkp-12042012.php on line 3
+[28-Apr-2012 02:10:35] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoesbkp-12042012.php on line 3
+[28-Apr-2012 02:18:13] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoes.php on line 3
+[28-Apr-2012 02:18:13] PHP Fatal error:  Class 'Oferta' not found in /home/edegr109/public_html/inc/direita-promocoesbkp-12042012.php on line 3
+[11-Jun-2012 16:21:05] PHP Fatal error:  Class 'Cliente' not found in /home/edegr109/public_html/inc/filtrocidade.php on line 2
+[11-Jun-2012 16:21:53] PHP Warning:  require_once(administrator/models/Base.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/edegr109/public_html/inc/filtrocidade.php on line 2
+[11-Jun-2012 16:21:53] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'administrator/models/Base.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/edegr109/public_html/inc/filtrocidade.php on line 2
+[11-Jun-2012 16:22:22] PHP Warning:  Invalid argument supplied for foreach() in /home/edegr109/public_html/inc/filtrocidade.php on line 9
+[11-Jun-2012 16:22:27] PHP Warning:  Invalid argument supplied for foreach() in /home/edegr109/public_html/inc/filtrocidade.php on line 9
+[11-Jun-2012 16:22:29] PHP Warning:  Invalid argument supplied for foreach() in /home/edegr109/public_html/inc/filtrocidade.php on line 9
+[11-Jun-2012 16:22:45] PHP Warning:  Invalid argument supplied for foreach() in /home/edegr109/public_html/inc/filtrocidade.php on line 9

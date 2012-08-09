@@ -1,0 +1,108 @@
+<?php
+session_start();
+require_once ("../administrator/models/Base.php");
+require_once ("../administrator/models/Oferta.php");
+$oferta = new Oferta();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>É de Graça - Identificação</title>
+<?php if(!$_SESSION['empresa']){ ?>
+<link rel="stylesheet" type="text/css" media="screen" href="../administrator/style/edegraca-sis.css" />
+ <?php }else{?>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../administrator/style/edegraca-sis.css" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../administrator/style/ui.tabs.css" />
+<link type="text/css" href="../administrator/style/galeria.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" media="all" href="../administrator/style/jScrollPane.css" />
+<link type="text/css" href="../administrator/smoothness/jquery-ui-1.8.custom.css" rel="stylesheet" />
+<link type="text/css" href="../administrator/style/autocomplete.css" rel="stylesheet" />
+<script type="text/javascript" src="../administrator/js/jquery-1.4.2.min.js" charset="iso-8859-1"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.bgiframe.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.ui.core.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.ui.widget.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.ui.tabs.js"></script>
+<script type="text/javascript" src="../administrator/js/jScrollPane.js"></script>
+<script type="text/javascript" src="../administrator/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../administrator/js/Utils.js"></script>
+<script type="text/javascript" src="../administrator/js/jquery-ui-1.8.custom.min.js"></script>
+<script type="text/javascript" src="../administrator/js/jquery.ui.datepicker-pt-BR.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.maskMoney.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.livequery.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.bgiframe.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.autocomplete.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.readonly.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.maskedinput-1.1.2.pack.js"></script>
+<script language="JavaScript" type="text/javascript" src="../administrator/js/jquery.validate.js"></script>
+ 	
+ <?php }?>	
+</head>
+		<?php if(!$_SESSION['empresa']){ ?>
+		<body id="body_login">
+		<div class="login">
+			<div id="formlogin">
+					<span class="mensagem" id="mensagem">
+						<?php
+
+if ($_SESSION['alert'] != "") {
+	echo $_SESSION['alert'];
+	$_SESSION['alert'] = "";
+}
+?>		
+					</span>
+					
+				  <form method="post" action="../administrator/controllers/Parceiros.php" class="form_login" id="form_login">
+				   		<label class="label">E-mail :</label><br>
+				   		<input type="text" id="email" name="email" class="input" />
+				   		<br>
+				   		<label class="label">Senha :</label><br>
+				   		<input type="password" name="senha" id="senha" class="input"/>
+				  		<input type="submit" name="logar" id="btnLogar" value="Entrar" class="botao"/>
+				  </form> 
+			</div>
+			</div>
+		</body>
+		<?php }else{?>
+		<body >
+			
+			<div id="topo"><div class="wrap">
+				<div id="logo"></div>
+				<div id="topo-login">
+								<span> <strong>Ol&aacute;!<?php echo" ". $_SESSION['nome'];?></strong></span><div id="btn-sair"><a href="sair.php"></a></div>
+				</div>
+				</div>
+			</div>
+					<div id="menucontainer">
+								<div id="menu">
+											<ul id="menu_drop" style="width:300px">				
+												<li>
+													<a href="?p=promocoes">Promoções</a>
+												</li>	
+											
+											</ul>
+										
+									</div>
+						</div>
+			
+					<div id="conteudo">	
+								<div class="corpo">
+								 <?php 
+								 		$pagina = $oferta->anti_injection($_GET['p']);
+								 
+								 		if(!empty($pagina)){
+								 		if (file_exists($pagina).".php") {
+												include $pagina.".php";
+										}
+								 }else{
+								 	include("promocoes.php");
+								 }
+								?>
+								</div>
+					</div>
+			
+		
+		</body>
+		<?php }?>
+</html>

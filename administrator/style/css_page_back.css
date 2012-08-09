@@ -1,0 +1,159 @@
+@CHARSET "ISO-8859-1";
+
+/* topo*/
+.topo{
+background-color:#89DEFB; 
+border-bottom:2px solid #ddd;
+ height:173px;  margin:-15px 0 0 -9px;
+  width:1280px;
+  }
+/*menu*/
+.menu{
+background:url(../img/bg_menu2.gif) no-repeat;
+ width:300px;
+  height:390px;
+   margin-left:-7px;
+    padding-left:0;
+	 float:left;
+	 font-family:Verdana;
+	font-size:12px;
+	 }
+/*login*/
+.login{
+background: url(../img/bg_input.JPG) no-repeat;
+ margin:30px 0 0 400px;
+  height:300px;
+  }
+/*form*/
+.form_login{
+margin:70px 0 0 30px;
+ float:left;
+  position:absolute;
+  }
+#formCliente{
+margin:50px 0 0 30px;
+ float:left;
+  position:absolute;
+  }
+/*label*/
+.label{
+  font-size:medium;
+  }
+#direito{
+margin-left: 288px;
+}
+#direito_select{
+margin-left: 93px;
+
+}
+#sexo{
+ height:23px;
+  background:none; 
+  border:1px solid #89DEFB;
+}
+#sexo option{
+  background:none; 
+  border:1px solid #89DEFB;
+}
+#direita2{
+margin-left: 95px;
+margin-top: 0px;
+
+}
+/*inputs*/
+.input{
+margin:8px 0 10px 0; 
+width:250px;
+ height:23px;
+  background:none; 
+  border:1px solid #89DEFB;
+  }
+/*span de mensagem*/
+.mensagem{
+margin:30px 0 0 100px;
+float:left;
+z-index:999;
+color:red;
+   }
+/*Conteudo do menu*/
+.li_menu{
+border-bottom:1px groove #ABCED0;
+ list-style-type:none;
+  margin-left:10px; 
+  margin-bottom:5px;
+   width:150px;
+   color:#000000;
+   }
+.ul_menu{
+margin-top:70px;}
+.li_menu a {
+color:black;
+border:none;
+text-decoration:none;
+font-family:Verdana;
+font-size:12px;
+}
+
+.li_menu a:hover{
+background-color:#89DFFB;
+ text-decoration:none; 
+ border:none;
+ 
+ }
+
+/*titulo*/
+.titulo{
+margin-left:559px;
+ margin-top:20px;
+  color:#89DDBB;
+  font-family:Verdana;
+  font-size:18px;
+  }
+/*corpo*/
+.corpo{
+margin-left:460px; 
+margin-top:20px;
+
+  border: 1px solid #DDD;
+   width:650px;
+    height:350px;
+	font-family:Verdana;
+	font-size:12px;
+}
+/*tabela*/
+.table{
+margin-left:83px;
+width:460px; 
+text-align:left;
+border:1px solid #ddd; 
+margin-top:35px;
+
+   }
+.table th{background-color:#ddd; border:1px solid;}
+
+.table tr td{border-bottom:1px solid; }
+
+#botaoInserir{
+border:1px solid #4D4F50;
+text-align:center;
+width:180px;
+height:20px;
+background-color:#D4DAD7;
+margin-top:5px;
+cursor:pointer;
+color:#047B44;
+margin-left:6px;
+}
+#botaoExcluir{
+border:1px solid #4D4F50;
+text-align:center;
+width:180px;
+height:20px;
+background-color:#D4DAD7;
+margin-top:-20px;
+cursor:pointer;
+color:red;
+margin-left:6px;
+margin-right:250px;
+float:right;
+}

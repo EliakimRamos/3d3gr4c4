@@ -1,0 +1,47 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="topo">
+	<div id="topo-content">
+	<div id="logo"></div>
+    <div id="cidades-topo">
+    Recife
+    </div>
+    <div id="topo-right">
+     <?php if($_SESSION['cliente']){ ?>
+      <div id="menu-topo">
+    	<ul>
+        <li class="menu-topo-left"><a href="#">Minha Conta</a></li>
+        <li class="menu-topo-linha"></li>
+        <li class="menu-topo-right"><a href="sair.php">Sair</a></li>
+        </ul>
+    </div><!-- fim div menu-topo-->
+    <?php }else{?>
+      <div id="menu-topo">
+    	<ul>
+        <li class="menu-topo-left"><a href="login.php">Login</a></li>
+        <li class="menu-topo-linha"></li>
+        <li class="menu-topo-right"><a href="cadastro.php">Cadastre-se</a></li>
+        </ul>
+    </div><!-- fim div menu-topo-->
+    <?php } ?>
+    <div id="topo-newsletter">
+    <form action="#" id="newletter">
+    Receba nossas ofertas:
+    <input name="email" type="text" id="newsletter-txtfield"/>
+    <div id="btn-ok-newsletter"><a href="#"></a></div>
+    </form>
+    </div>
+    
+    
+    
+    </div><!-- fim div topo-right-->
+    
+  </div><!-- fim div topo-content--> 
+</div><!-- fim div topo-->

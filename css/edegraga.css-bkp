@@ -1,0 +1,206 @@
+/* CSS Document */
+/* Author: André de Holanda */
+/* Date: 27 DEZ 2011 */
+/* Version: 1.0  */
+
+/* 
+
+	CSS RESET
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub,sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong { font-weight:bold;}
+
+/*
+	
+	FIM CSS RESET 
+
+*/
+
+body { background:#5f9305 url(../images/bg01.jpg) top center no-repeat }
+.main { background:#4d7306; width:660px; display:table; margin:20px auto; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+.padding10 { padding:10px}
+
+/*------- CADASTRO ------*/
+#cadastro {}
+div#form-col-1{ display:table; float:left; width:320px; }
+div#form-col-2{ display:table; float:left; width:320px; }
+form#cadastro legend{ color:#FFF; font-size:12px; padding:0 0 5px 0; display:block;}
+.textfield { background:#99d907; height:35px; border:0; width:300px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; padding:0 5px; color:#3f5f04; outline:none; margin:0 0 10px 0 }
+
+.textfield:focus { background: url(../images/ui-sprites.png) 0px -48px; color:#abef2c}
+
+form#cadastro label { font-size:12px; color:#fff;}
+form#cadastro label a{ color:#abef2c; text-decoration:none;}
+form#cadastro label a:hover{ text-decoration:underline; }
+
+.btn-cadastrar { background:url(../images/ui-sprites.png) -3px -3px; width:103px; height:37px; }
+.btn-cadastrar a{ height:37px; display:block;background:url(../images/ui-sprites.png) -3px -3px;}
+.btn-cadastrar a:hover { background-position:-108px -3px}
+#captcha {width: 125px;
+margin: 0 0 0 3px;
+}
+
+
+/* ------------------- TOPO ------------- */ 
+#topo { height:135px; background:url(../images/ui-sprites.png) 0px -92px #000; margin:0 0 10px 0}
+#topo-content {height:135px; width:998px; margin:0 auto; }
+#logo { width:307px; height:135px; background:url(../images/ui-sprites.png) 0px -228px; float:left;}
+#cidades-topo{width:105px; height:29px; float:left; color:#fff; background:url(../images/ui-sprites.png) -337px -242px; font-size:14px; display:inline-block; padding:10px 10px; margin:20px 0 0 20px }
+
+#topo-right{ float:left; height:135px;  width:536px; margin:0 0 0 10px}
+
+#menu-topo { height:43px;  display:inline-block; padding:0 10px; float:right;  }
+#menu-topo  ul { display:inline-block}
+#menu-topo  ul li {display:inline; float:left; margin:0px 0px;background:url(../images/ui-sprites.png) 0px -404px;}
+.menu-topo-left {background:url(../images/ui-sprites.png) 0px -404px; border-bottom-left-radius:5px; -webkit-border-bottom-left-radius:5px; -moz-border-radius-bottomleft:5px; border-right:5px dotted ##5e8f04;}
+.menu-topo-right { background:url(../images/ui-sprites.png) 0px -404px; border-bottom-right-radius:5px; -moz-border-radius-bottomright:5px; -webkit-border-bottom-right-radius:5px}
+
+.menu-topo-left a:hover {border-bottom-left-radius:5px; -webkit-border-bottom-left-radius:5px; -moz-border-radius-bottomleft:5px;}
+.menu-topo-right a:hover {border-bottom-right-radius:5px; -moz-border-radius-bottomright:5px; -webkit-border-bottom-right-radius:5px}
+#menu-topo  ul li a{ display:block; height:28px; padding:14px 15px 0 15px; font-size:14px; color:#aaf026; text-decoration:none}
+#menu-topo  ul li a:hover{ background:url(../images/ui-sprites.png) 0px -480px}
+div#topo-newsletter { clear:both; color:#fff; font-size:12px; padding:30px 0 0 140px}
+#newsletter-txtfield { height:33px; background:url(../images/ui-sprites.png) -463px -306px #ccc; border:none; outline:none; padding:0 5px; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; width:200px}
+
+div#btn-ok-newsletter { height:33px; display:inline-block; width:41px; top:12px; position:relative;}
+div#btn-ok-newsletter a { background:url(../images/ui-sprites.png) -754px -306px; height:33px; display:block;}
+div#btn-ok-newsletter a:hover { background-position:-754px -341px;}
+
+/*------------------- MAIN --------------------*/
+div#main { width:998px; margin:0 auto; display:table; clear:both;}
+div#main-left { width:751px; margin:0 0px 0 0 ; float:left}
+div#main-left h1{ font-size:22px; display:block; margin:0 0 20px 0 }
+div#main-left h1 span {color:#aff600}
+div#main-right { width:229px;  float:left; margin: 0 0 0 15px; display:table}
+div.promo-right { background:#4d7306 url(../images/bg-promo-right.jpg) bottom no-repeat; padding:10px; -moz-border-radius:5px; border-radius:5px; -webkit-border-radius:5px; margin:0 0 10px 0  }
+div.promo-right img{  -moz-border-radius:5px; border-radius:5px; -webkit-border-radius:5px}
+
+
+div#off-top { background:url(../images/off-top.png); width:162px; height:53px; margin:0 0 0 22px}
+div#off-top div{ padding:14px 2px; color:#fff; font-size:36px; text-align:center;} 
+div#off-bottom { background:url(../images/off-bottom.jpg); width:189px; height:52px; margin: 0 0 0 10px}
+div#off-bottom div{ display:block; width:162px; margin:0 0 0 12px; padding: 10px 0 0 0; text-align:center; font-size:27px; color:#aaf101}
+sup {
+vertical-align: super;
+font-size: 17px;
+}
+
+div#container-promo-dia{  background:url(../images/bg-container-promo-dia.jpg) repeat-x #000; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; margin:0 0 20px 0; display:table; width:751px; }
+div#container-left{ width:199px; text-align:center; font-size:12px; display:table; float:left}
+div#container-right {
+/*background: #090;*/
+float: left;
+width: 532px;
+margin: 10px;
+}
+div#container-foto {}
+div#container-foto img { border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; }
+
+div#tempo-container { background:#093 url(../images/fundo-relogio.jpg) repeat-x; width:189px; margin:0 0 0 auto; display:table; color:#dadada; height:98px }
+div#tempo-restante {text-align:center; height:10px; padding:10px 0}
+div.relogio-todo{ padding:0 0 0 10px; display:table;}
+div.relogio-col { width:42px; float:left}
+div.relogio{ width:42px; height:34px; background:url(../images/ui-sprites.png) -337px -296px; color:#fff; font-size:26px; padding:8px 0 0 0; margin:0 0 3px 0 }
+
+div#preco-economia { background: url(../images/fundo-economia.jpg); width:180px; height:56px; margin:10px 0 10px 15px}
+div#preco-normal{ height:28px; color:#ababab; padding:8px 0 0 0 }
+div#preco-normal span { color:#fff;}
+div#economia  span { color:#b5ff01}
+
+div.off-separador { height:4px; background:url(../images/separador.jpg); margin:0 0 10px 0 }
+div.promo-status { text-align:center; color:#aaf101; font-size:15px; margin:0 0px 10px 0}
+div.qtd-pessoas {color:#aaf101; font-size:24px; margin:0 0 10px 0 }
+div.pessoas-compraram { color:#ababab; font-size:13px; margin:0 0 10px 0 }
+
+div.btn-comprar { width:151px; height:73px; margin:0 0 20px 20px   }
+div.btn-comprar a {height:73px; display:block; background:url(../images/ui-sprites.png) -4px -542px }
+div.btn-comprar a:hover { background-position:-159px -542px  }
+
+div.contorno-meio {
+	border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; background:#4d7306 url(../images/bg-bottom-main.png) no-repeat bottom; padding:10px; color:#fff;
+	display:table; width: 731px; margin:0 0 20px 0; clear:both; font-size:12px
+}
+div.contorno-col-1, div.contorno-col-2 { font-size:12px}
+
+div.contorno-col-1 { float: left;  width: 352px; border-right:1px solid #5a9605}
+div.contorno-col-2 {width: 373px; float:left; margin:0 0 0 5px;
+
+}
+
+div.contorno-col-1 h2, div.contorno-col-2 h2, div.contorno-meio h2 { font-size:17px; text-transform:uppercase; margin:0 0 10px 0 }
+div.contorno-col-1 ul, div.contorno-col-2  ul{ }
+div.contorno-col-1 ul li , div.contorno-col-2  ul li { display:block; margin:0 0 5px 0;  background:url(../images/bola-li-regras.png) no-repeat;padding:0 0 0 20px }
+
+/*-------------- LATERAL ------------ */
+div.precos-lateral { background:url(../images/ui-sprites.png) -329px -548px; width:171px; height:53px; position:relative; top:-27px; margin:0 auto; }
+div.precos-lateral div { height:18px; padding:6px 10px 0 10px; text-align:right; color:#fff; }
+div.precos-lateral div.transcrito { text-decoration:line-through; font-size:13px}
+div.precos-lateral span { float:left; text-decoration:none;}
+div.text-promo-lateral { top: -10px;
+position: relative; color:#fff; font-size:12px; line-height:16px}
+
+
+
+/*-------------- FOOTER ------------ */
+div#footer { height:252px; background:#3b5a03; display:block; clear:both;}
+div#footer-container { width:998px; margin:0 auto; display:table}
+div#cartoes { display:table; margin:22px 0 0 0; }
+div#cartoes span {color:#fff; text-transform:uppercase; float:left; display:inline-block; margin:0 10px 0 0; font-size:13px; padding:5px 0 0 0 }
+div.cartao { float:left; display:inline-block; margin:0 5px}
+
+div#menu-footer { clear:both; display:table; margin:30px 0 0 0 }
+div#menu-footer div { width:198px; float:left;}
+div#menu-footer span { color:#fff; display:block; border-bottom:1px solid #5e9005; padding:0 0 8px 10px}
+div#menu-footer ul { display:table; margin:10px 0 0 0 }
+div#menu-footer ul li { color:#7bbc04; font-size:12px; text-transform:uppercase; margin:0 0 3px 10px}
+div#menu-footer ul li a {color:#7bbc04; text-decoration:none}
+div#menu-footer ul li a:hover { color:#fff;}
+div#copyrights { background:#496b0b; height:39px; margin:20px 0 0 0; }
+div#copyrights-container { width:998px; margin:0 auto; padding:15px 0 0 0; color:#75b501; font-size:12px}
+div#copyrights-container span { float:right;}

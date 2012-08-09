@@ -1,0 +1,20 @@
+/* CSS Document */
+body { background:#6da000 url(../images/bg01.jpg) center top !important}
+.login {
+background:url(../images/fundo-div-entrar.png) no-repeat;
+width: 537px; height: 556px;
+margin:80px auto 65px auto;
+text-align: left;
+display:table
+}
+
+input#email, input#senha { background:url(../images/ui-sprites-sis.png) 0px -19px; height:40px; border:1px solid #778e10; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; width:329px; margin:0 0 10px 0; padding:0 15px; outline:none}
+input#email:focus, input#senha:focus { background-position:0px -70px;	}
+
+div#formlogin {
+margin:180px auto;
+width:330px;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:13px;
+}
+div#btnLogar { clear:both; width:70px; height:72px; background:url(../images/ui-sprites-sis.png) -207px -123px; cursor:pointer; margin:0 auto;}
+div#btnLogar:hover { background-position:-279px -123px}

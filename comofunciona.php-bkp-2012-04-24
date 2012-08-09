@@ -1,0 +1,43 @@
+<?php
+session_start();
+require ("administrator/models/Base.php");
+require ("administrator/models/Cliente.php");
+require ("administrator/models/Oferta.php");
+require ("administrator/models/Empresa.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php include('inc/header.php'); ?>
+</head>
+
+<body>
+<?php include('inc/topo.php'); ?>
+<div id="main">
+<div id="main-left">
+	
+    
+    
+    <div class="contorno-meio">
+    <h2> Como Funciona:</h2>
+    <p>O &Eacute; de gra&ccedil;a &eacute; o melhor &nbsp;site de Compra Coletiva. Foi desenvolvido Pela Pernambuco consultoria com o intuito de &nbsp;ajudar a voc&ecirc; a descobrir lugares descontra&iacute;dos e diferentes, proporcionando uma experi&ecirc;ncia &uacute;nica para nossos compradores.</p>
+<p>Temos parceria com os melhores estabelecimentos e tamb&eacute;m com as p&eacute;rolas da cidade que ainda n&atilde;o foram descobertas, &nbsp;mas que t&ecirc;m um grande diferencial. Para&nbsp;<span>&nbsp;levamos diariamente at&eacute; voc&ecirc; as mais variadas ofertas com um pre&ccedil;o bastante reduzido, com descontos de at&eacute; 90%.</span></p>
+<p><span>As ofertas ficam ativas at&eacute; o per&iacute;odo de tempo estabelecido ou ao atingir o limite m&aacute;ximo de vendas mostrado na regra da oferta, para que o usu&aacute;rio realize uma compra este dever&aacute; efetuar um cadastro no site e optar pela ofertadesejada, os compradores receber&atilde;o um e-mail com o c&oacute;digo mediante a aprova&ccedil;&atilde;o pelo Pagseguro que deve ser apresentado ao nosso parceiro.</span></p>
+<p><span><span>Voc&ecirc; realiza sua compra com a maior seguran&ccedil;a e comodidade pagando com nossos parceiros do&nbsp;</span><a href="https://pagseguro.uol.com.br/" target="_blank">UOL PagSeguro</a><span>.</span></span></p>
+<p><span><span><span>Este &eacute; o poder da compra coletiva, pessoas se unindo em busca de um mesmo benef&iacute;cio. Voc&ecirc; s&oacute; tem a ganhar, aproveite nossas ofertas que "&Eacute; DE GRA&Ccedil;A",</span><a href="http://www.edegraca.com.br/cadastro.php">CADASTRE-SE</a><span>.</span><br /></span></span></p> 
+    </div>
+    
+    
+    
+    
+    
+</div> <!-- fim div main-left-->
+
+<?php include('inc/direita-promocoes.php'); ?>
+</div><!-- fim div main-->
+<?php include('inc/footer.php'); ?> 
+
+
+
+</body>
+</html>

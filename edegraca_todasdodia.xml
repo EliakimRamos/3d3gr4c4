@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ofertas>
+	<oferta>
+		<cidade>Recife</cidade>
+		<titulo>
+			Rodízio completo Almoço ou Jantar com +40% de desconto na Churrascaria Boi Preto Recife (de até R$ 49,90 por R$ 29,90) É de Graça!!!! 
+		</titulo>
+		<preco-real>49,90</preco-real>
+		<preco-final>29,90</preco-final>
+		<desconto>40.08</desconto>
+		<url-imagem>http://www.edegraca.com.br/administrator/uploads/05042012154636_foto01.jpg</url-imagem>
+		<site>www.edegraca.com.br/index.php?id=115&p=1</site>
+		<link>
+		http://www.edegraca.com.br/
+		</link>
+		<data-fim>20/04/2012 23:59:59</data-fim>
+		<categoria>Gastronomia</categoria>
+	</oferta>
+<oferta>
+		<cidade>Recife</cidade>
+		<titulo>
+			Spettus Boa Viagem, a Melhor churrascaria do Recife segundo a revista Veja com 43% de Desconto. São 22 Cortes de Carnes nobres + frutos do mar e culinária japonesa. 
+		</titulo>
+		<preco-real>88,80</preco-real>
+		<preco-final>49,90</preco-final>
+		<desconto>43.00</desconto>
+		<url-imagem>http://www.edegraca.com.br/administrator/uploads/13042012150015_02.jpg</url-imagem>
+		<site>http://www.edegraca.com.br</site>
+		<link>
+		http://www.edegraca.com.br/index.php?id=109&p=1
+		</link>
+		<data-fim>20/04/2012 23:59:59</data-fim>
+		<categoria>Gastronomia</categoria>
+	</oferta>
+	<oferta>
+		<cidade>Recife</cidade>
+		<titulo>
+			Que dúvida! loira ou morena ? acompanhada de 02 caldinhos para vocês só o É de graça proporciona esta alegria !!!
+		</titulo>
+		<preco-real>18,80</preco-real>
+		<preco-final>7,99</preco-final>
+		<desconto>57.00</desconto>
+		<url-imagem>http://www.edegraca.com.br/administrator/uploads/06042012224801_foto1.jpg</url-imagem>
+		<site>http://www.edegraca.com.br</site>
+		<link>
+		  http://www.edegraca.com.br/index.php?id=118
+		</link>
+		<data-fim>20/04/2012 23:59:59</data-fim>
+		<categoria>Gastronomia</categoria>
+	</oferta>
+	
+</ofertas>

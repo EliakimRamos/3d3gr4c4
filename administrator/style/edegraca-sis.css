@@ -1,0 +1,210 @@
+/* CSS Document */
+/* Author: André de Holanda */
+/* Date: 27 DEZ 2011 */
+/* Version: 1.0  */
+
+/* 
+
+	CSS RESET
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub,sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong { font-weight:bold;}
+
+/*
+	
+	FIM CSS RESET 
+
+*/
+
+body { background:#6da000 url(../img/bg01.jpg) center top !important; color:#fff; }
+.login {
+background:url(../img/fundo-div-entrar.png) no-repeat;
+width: 537px; height: 556px;
+margin:80px auto 65px auto;
+text-align: left;
+display:table
+}
+/*LOGINNN-------------------------------  */
+
+
+input#email, input#senha { background:url(../img/ui-sprites-sis.png) 0px -19px; height:40px; border:1px solid #778e10; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; width:329px; margin:0 0 10px 0; padding:0 15px; outline:none}
+input#email:focus, input#senha:focus { background-position:0px -70px;	}
+
+div#formlogin {
+margin:180px auto;
+width:330px;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:13px;
+}
+div#btnLogar { clear:both; width:70px; height:72px; background:url(../img/ui-sprites-sis.png) -207px -123px; cursor:pointer; margin:0 auto;}
+div#btnLogar:hover { background-position:-279px -123px}
+.label-entrar {
+color: #030;
+margin: 0 0 -7px 0;
+display: block;
+}
+
+
+/*FIM LOGINNNNNNNNNNNNNNN ----------- */
+div.wrap { width:960px; margin:0 auto;}
+div#topo { background: url(../img/ui-sprites-sis.png) 0 -209px; height:152px;}
+div#logo  { background:url(../img/ui-sprites-sis.png) 0 -400px; width:316px; height:118px; float:left; margin:10px 0 0 0}
+div#topo-login{ float:right;  width:268px; font-size:12px; margin:10px 0 0 0}
+div#topo-login span { display:inline-block; height:28px; vertical-align:middle}
+div#topo-login strong { color:#fff;}
+div#btn-sair{ width:65px; height:28px; display:inline-block; margin:5px 0 0 10px}
+div#btn-sair a{ display:block; height:28px; background:url(../img/ui-sprites-sis.png) -443px -409px}
+div#btn-sair a:hover{ background-position:-443px -440px}
+
+
+div#menucontainer {height:36px; background:url(../img/ui-sprites-sis.png) 0px -360px;}
+div#menu { clear:both; height:36px; background:url(../img/ui-sprites-sis.png) 0px -360px;width:960px; margin:0 auto;}
+div#menu ul{ display:inline}
+div#menu ul li{display:inline; margin:0 0 0 0; position:relative}
+div#menu ul li a{ display:inline-block; padding:11px 10px 10px;  margin:1px 0 0 0; color:#b6d334; text-decoration:none; font-size:14px}
+div#menu ul li a:hover { color:#192601; background:url(../img/ui-sprites-sis.png) 0 -700px}
+div#menu li ul { /*display:none*/ position: absolute;
+						left: 0px;
+						top: 27px;
+						display: none;
+						background:#3a5609; width:150px}
+div#menu li ul li { display:block;  }
+div#menu li ul li a{ display:block; font-size:12px; }
+div#menu li ul li a:hover{}
+div#menu li:hover ul { display: block; }
+
+
+div#main { width:960px; margin:20px auto; font-size:12px;}
+div#botoes-index{width:960px; height:300px; margin:0 auto}
+div.btn-index { width:151px; height:151px; display:inline-block; }
+div.btn-index a {height:151px; display:block}
+div.oferta a{ background: url(../img/ui-sprites-sis.png) -39px -816px; }
+div.oferta a:hover{ background-position:-39px -977px}
+
+
+div.admin a{ background:url(../img/ui-sprites-sis.png) -207px -816px;}
+div.admin a:hover{ background-position:-207px -977px;}
+
+
+div.empresa a{ background:url(../img/ui-sprites-sis.png) -382px -816px}
+div.empresa a:hover { background-position:-382px -977px;}
+
+
+div.compras a{ background:url(../img/ui-sprites-sis.png) -39px -1138px}
+div.compras a:hover { background-position:-39px -1297px;}
+
+div.financeiro a{ background:url(../img/ui-sprites-sis.png) -207px -1138px}
+div.financeiro a:hover { background-position:-207px -1297px;}
+
+
+/*LISTAGEM -------------*/
+.round5px { border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
+div#main h1{ font-size:18px; color:#91d120; display:block; text-align:center; margin:0 0 20px 0; padding:0 0 20px 0; border-bottom:dotted #9F3 1px}
+input.pesquisa { height:20px; border:none; padding:5px 5px; outline:none;  background:#3a5609; color:#95B524}
+input.pesquisa:focus{ background:#3a5609}
+.table {border-spacing: 2px; background:#2e4604; border:1px solid #548105; margin:10px 0 0 0}
+.table td { text-align:center; border-bottom: 1px solid #548105;
+border-left: 1px solid #548105; vertical-align:middle}
+.column1_titulo { background:#548105; padding:10px 3px}
+
+.column1_titulo th{ padding:10px 3px}
+.btn-editar {width:74px; height:30px; margin:5px auto; }
+.btn-editar a{ background:url(../img/ui-sprites-sis.png) -335px -446px; height:30px; display:block}
+.btn-editar a:hover{ background-position:-335px -408px}
+
+#btns-editores{height:64px; float:right; background:url(../img/ui-sprites-sis.png) 0px -630px; display:table; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px; border-top-left-radius:5px; border-top-right-radius:5px}
+.btn-desativar, .btn-apagar, .btn-inserir { cursor:pointer; background:url(../img/ui-sprites-sis.png); width:101px; height:45px; margin:10px 10px; display:inline-block
+}
+
+.btn-desativar { background-position:-340px -518px}
+.btn-desativar:hover { background-position:-340px -572px}
+
+.btn-apagar { background-position:-444px -518px}
+.btn-apagar:hover { background-position:-444px -572px}
+
+.btn-inserir{ background-position:-546px -518px}
+.btn-inserir:hover { background-position:-546px -572px}
+
+
+
+/*----------------- cadastro de ofertas -------------------- */
+
+#tabela-inserir-oferta td{padding:5px 0 0 0}
+#tabela-inserir-oferta legend, #formOferta label {margin:5px 0 5px 0; display:block;}
+#formOferta textarea.textarea, #formOferta select, #formOferta .textfield { background:#3a5600; border:none; outline:none; color:#9F0; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; padding:5px;  border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
+
+#formOferta .textarea { width:100%}
+
+#formOferta .textfield { width:90px}
+
+
+#formOferta #titulo { width:450px; height:135px}
+
+
+
+/*------------------ Ajustes UI ----------------------*/
+tr.odd {
+	background-color: #3D5A01 !important;
+	border-bottom:1px solid #fff !important;
+}
+
+tr.even {
+	background:none !important;
+	
+	}
+	
+.sorting_1, .sorting_2{ background:none !important}
+
+
+
+/*--------------------- tela parceiro sis -------------------- */
+div#consultavoucher { color:#fff;}
+div#consultavoucher table td { color:#fff; padding:5px}
+td.tdvaucher { font-size:18px; color:#B6D334 !important}
+td.tdnomecliente {}
+table#listarofertas td{ padding:10px}

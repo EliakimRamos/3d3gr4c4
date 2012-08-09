@@ -1,0 +1,92 @@
+@CHARSET "ISO-8859-1";
+/*titulo*/
+#cabecalho{
+	width:100%;
+	height:130px;
+	margin-butttom:30px;
+	}
+#relatorio{
+  font-family: Tahoma, "Arial Rounded MT Bold";
+  font-size:11px;
+  }
+#alinha_logo{
+	width:100%;
+}
+#alinha_titulo{
+	float:left;
+	margin:20px 0 0 20px;
+	width:500px;
+}
+.titulo{
+  	font-family: Tahoma, "Times New Roman", Times, serif;
+  	font-size:20px;
+	font-weight:bold;
+	width:400px;
+	padding-bottom:10px;
+}
+#logo{
+	width:210px;
+	height:100px;
+	float:left;	
+	margin:20px 0 20px 10px;
+}
+#infoCliente{
+	width:100%;
+	margin:40px 0 0 15px;
+	margin-bottom:20px;
+	float:left;	
+	}
+#produtos{
+	width:500px;
+	margin-left:15px;
+	}	
+#obs{
+	margin-top:20px;
+	width:300px;
+	margin-left:15px;
+	}		
+#resp{
+	margin-top:20px;
+	width:300px;
+	margin-left:15px;
+	}	
+/*tabela*/
+
+#linha{
+	clear:both;
+}
+body{
+	font-family: Tahoma, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	border:1px solid #DFDFDF;	
+}
+
+#tabela{
+	width:100%;
+}
+
+table {
+	width:100%;
+	margin:2em auto;
+	font-family: Tahoma, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	border:1px solid #DFDFDF;
+	text-align:center;
+	  }	/*#F5F5F5*/
+table td {
+	white-space:nowrap;
+	border-bottom: 1px solid #DFDFDF;
+	border-left:1px solid #DFDFDF;
+	border-top:1px solid #DFDFDF;
+	border-right:1px solid #DFDFDF;
+	}				
+th {
+	font-weight:bold;
+	background-color:#DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+	border-left:1px solid #DFDFDF;
+	border-top:1px solid #DFDFDF;
+	border-right:1px solid #DFDFDF;
+	}	

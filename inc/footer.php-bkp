@@ -1,0 +1,92 @@
+<div id="footer">
+<div id="footer-container">
+<div id="cartoes">
+<span>
+Você pode<br />Pagar Com:</span>
+<div class="cartao"><img src="images/boleto.png" width="57" height="35" alt="boleto" /></div>
+<div class="cartao"><img src="images/visa.png" width="57" height="35" alt="visa" /></div>
+<div class="cartao"><img src="images/mastercard.png" width="57" height="35" alt="mastercard" /></div>
+<div class="cartao"><img src="images/diners.png" width="57" height="35" alt="diners" /></div>
+<div class="cartao"><img src="images/american-express.png" width="57" height="35" alt="american express" /></div>
+<div class="cartao"><img src="images/hiper.png" width="57" height="35" alt="hiper" /></div>
+<div class="cartao"><img src="images/aura.png" width="57" height="35" alt="aura	" /></div>
+<div class="cartao"><img src="images/elo.png" width="57" height="35" alt="elo" /></div>
+<!-- 
+<div class="cartao"><img src="images/pleno.png" width="57" height="35" alt="pleno" /></div>
+<div class="cartao"><img src="images/personalcard.png" width="57" height="35" alt="personal card" /></div>
+-->
+<div class="cartao"><img src="images/oipaggo.png" width="57" height="35" alt="oi paggo" /></div>
+<div class="cartao"><img src="images/bradesco.png" width="57" height="35" alt="bradesco" /></div>
+<div class="cartao"><img src="images/itau.png" width="57" height="35" alt="itau" /></div>
+<div class="cartao"><img src="images/bb.png" width="57" height="35" alt="bancodobrasil" /></div>
+<div class="cartao"><img src="images/hsbc.png" width="57" height="35" alt="visa" /></div>
+
+
+</div> <!--fim div cartoes -->
+<div id="menu-footer">
+<div>
+    <span>É de Graça</span>
+    <ul>
+    <li><a href="quemsomos.php">Quem Somos</a></li>
+    <!--<li><a href="#">Na mídia</a></li>-->
+    <li><a href="termosuso.php">Termos de Uso</a></li>
+   
+    
+    </ul>
+</div>
+<div>
+    <span>Saiba Mais</span>
+    <ul>
+     <li><a href="#">Quem Somos</a></li>
+    <li><a href="#">Na mídia</a></li>
+    <li><a href="#">Termos de Uso</a></li>
+    
+    </ul>
+</div>
+<div>
+    <span>Parceiros</span>
+    <ul>
+    <li><a href="#">Quem Somos</a></li>
+    <li><a href="#">Na mídia</a></li>
+    <li><a href="#">Termos de Uso</a></li>
+    
+    </ul>
+</div>
+<div>
+    <span>Redes Sociais</span>
+    <ul>
+    <li><a href="#">Quem Somos</a></li>
+    <li><a href="#">Na mídia</a></li>
+    <li><a href="#">Termos de Uso</a></li>
+    
+    </ul>
+</div>
+<div>
+    <span>Minha Conta</span>
+    <ul>
+    <li><a href="#">Quem Somos</a></li>
+    <li><a href="#">Na mídia</a></li>
+    <li><a href="#">Termos de Uso</a></li>
+    
+    </ul>
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div><!-- foooter-container -->
+<div id="copyrights">
+<div id="copyrights-container">
+	© 2012 www.edegraca.com.br - Todos os direitos 	reservados.<span>
+Telefone: +55 (81) 3048-7777.</span>
+<br /></div>
+</div>
+
+ 
+</div>
+</div> <!-- foooter -->

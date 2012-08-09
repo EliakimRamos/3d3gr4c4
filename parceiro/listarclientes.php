@@ -1,0 +1,183 @@
+<?php session_start();
+
+require_once ("../administrator/models/Oferta.php");
+require_once ("../administrator/models/Funcoes.php");
+require_once ("../administrator/models/Cliente.php");
+require_once ("../administrator/models/OfertaCliente.php");
+
+$objOferta = new Oferta();
+$objFuncao = new Funcoes();
+$objCliente = new Cliente();
+$pechinchas = new OfertaCliente();
+
+$id = $objOferta->anti_injection($_GET['id']);
+$resultado = $pechinchas->listarOfertaCliente3("and id_oferta=".$id." and ativo > 0 ");
+
+$jaUsou = $pechinchas->listarOfertaCliente3("and id_oferta=".$id." and ativo = 2 ");
+$totalUsados = count($jaUsou);
+
+$Ativos =  $pechinchas->listarOfertaCliente3("and id_oferta=".$id." and ativo = 1 ");
+$totalAtivo = count($Ativos);
+
+$oferta = $objOferta->getOferta($id, "id");
+
+$total = count($resultado);
+?>
+
+<html>
+<head>
+<script type="text/javascript"	src="../js/jquery-1.4.2.min.js" charset="iso-8859-1"></script>
+<script language="JavaScript" type="text/javascript">
+	 function confirmar(id){
+		if(confirm("Confirmar o uso do Cupom?")){
+		 	$.post("confirmar.php",{ id:id }, 
+  	 		function(data){
+	  	 		alert(data);
+				setTimeout("location.reload(true)", 1000);  	 			
+  	 	 });	 		
+
+		}
+	 }
+	 
+	 $(function(){
+		 	$("#botaoImprimir").css("cursor","pointer");
+		 	$("#pesquisavoucher").keyup(function(){
+		  	 	$.post("buscavoucher.php",{voucher:$("#pesquisavoucher").val(),id:<?php echo $id;?>}, 
+		  	 		function(data){
+		  	 			$("#consultavoucher").html(data);
+		  	 	})
+	  	 	});
+		 	$("#localboungustaio").change(function(){
+		  	 	if($("#localboungustaio").val() != '-1'){
+			  	 	$.post("buscavoucher.php",{localoferta:$("#localboungustaio").val(),id:<?php echo $id;?>}, 
+			  	 		function(data){
+			  	 			$("#consultavoucher").html(data);
+			  	 	});
+		  	 	}
+	  	 	});
+		 	$("#localbrassato").change(function(){
+		  	 	if($("#localbrassato").val() != '-1'){
+			  	 	$.post("buscavoucher.php",{localoferta:$("#localbrassato").val(),id:<?php echo $id;?>}, 
+			  	 		function(data){
+			  	 			$("#consultavoucher").html(data);
+			  	 	});
+		  	 	}
+	  	 	});
+	  	 	
+	  	 	$("#botaoImprimir").click(function(){
+  	 			var idlocal = 0;
+  	 			<?php if($id == 132){ ?>
+  	 				idlocal = $("#localbrassato").val();
+  	 			<?php } if($id == 131){ ?>
+  	 				idlocal = $("#localboungustaio").val();
+  	 			<?php } ?>
+  	 			window.open("imprelacaovouche.php?id=<?php echo $_GET['id']?>&idlocal="+idlocal,"_blank","toolbar=yes, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=yes, width=1200, height=950");
+  	 		});
+	  	 	
+	 })
+</script>
+
+	<title>
+		Listagem das ofertas
+	</title>
+	
+<style type="text/css">
+.ok { color:#000;}
+.usou { background-color:#F00; color: #fff;}
+</style>
+</head>
+<body>
+<h3 class="titulo" style="text-align: center;">Listagem de clientes aprovados</h3>
+<table  border="0" cellpadding="0" style="margin-left:500px;" cellspacing="0" align="center">
+	<tr>
+		<td align="center">
+			<form action="index.php?p=listarclientes&id="<?php echo $id; ?> name="filtros" method="get">   
+	     		<?php 
+	     			if($id == 131){ 
+	     			
+	     		?>
+	     						<label class="label"> <strong>Local:</strong></label>
+	   											
+												  <select name="local" id="localboungustaio">
+												    <option value="-1">Selecione</option>
+												    <option value="1">Shopping Tacaruna</option>
+												    <option value="2">Shopping Plaza</option>
+												    <option value="3">Delivery</option>
+												  </select>
+												  &nbsp;&nbsp;&nbsp;
+	     		<?php 
+	     			}
+	     		 if($id == 132){?>
+	     		 		<label class="label"> <strong>Local:</strong></label><br/>
+	   											
+												  <select name="local" id="localbrassato">
+												    <option value="-1">Selecione</option>
+												    <option value="1">Shopping Tacaruna</option>
+												    <option value="2">Shopping Guararapes</option>
+												  </select>
+												  &nbsp;&nbsp;&nbsp;&nbsp;
+	     			
+	     	<?php	}
+	     		?>
+	     		
+	     		<span class="label">N&ordm; do Cupom: &nbsp;</span> 
+  				<input type="text" name="voucher" id="pesquisavoucher" value="" />	
+     		</form>
+     	</td>
+		<td align="center">
+			<img src="../administrator/img/imprimir.png" alt="Imprimir Cupom" name="botaoImprimir" border="0" id="botaoImprimir" title="Imprimir Voucher">
+     	</td>
+     </tr> 
+</table>
+<div id="consultavoucher" style="text-align: center;">
+<table width="100%" class="table">
+     <?php 
+     if($resultado){?>
+	     <tr class="column1_titulo">
+	          <th width="70%"><font size="2" face="arial">Cliente</font></th>
+	          <th width="20%"><font size="2" face="arial">Cupom</font></th>
+	          <th width="10%"><font size="2" face="arial">Ação</font></th>
+	     </tr>
+	     <tr>
+     <?php foreach ($resultado as $dados) {?>
+	     
+	    <tr <?php if($dados['ativo'] == 1){
+	     	 echo "class='ok'";
+	     }else{
+	     	echo "class='usou'";
+	     }
+	     	?>
+	     >	    
+
+	          <td class="tdnomecliente"><?php echo utf8_encode(ucwords(mb_strtolower($dados['nome'])));?></td>
+	          <td class="tdvaucher"><?php echo $dados['voucher']?></td>
+	          <td>	          
+	          	<?php if($dados['ativo'] == 1){?>
+	          		<a href=javascript:confirmar(<?php echo $dados['id']?>)>
+	          			<img src="../administrator/img/acao-utilizado.png" alt="Confirmar Venda" title="Confirmar Venda" border="0">
+	          		</a>
+	          	<?php }else{?>	          	
+	          		<font size="2" face="arial"><?php echo $objOferta->date_transform($dados['data'])?></font>
+	          	<?php }?>
+	          </td>
+			<?php } ?>
+     		<tr>
+	         	<td>
+					<font size="2" face="arial">Total Ativo: <?php echo $totalAtivo?></font>
+				</td>
+				<td>
+	         		<font size="2" face="arial">Total Utilizado: <?php echo $totalUsados?></font>
+				</td>
+				<td>
+	         		<font size="2" face="arial">Total de Cupons: <?php echo $total?></font>	
+				</td>
+     		</tr>
+     	<?php }else{?>
+     		<tr>
+	         	<td colspan="3"><font size="2" face="arial">Não existe nenhum Cliente nesta promoção.</font></td>
+     		</tr>     	
+     	<?php }?>
+</table>
+</div>
+</body>
+</html>

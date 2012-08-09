@@ -1,0 +1,763 @@
+@CHARSET "ISO-8859-1";
+html {
+	width:100%;
+	height:100%;
+} 
+body {
+	margin:0px;
+	background-color:#F5F7F8;
+	width:100%;
+	height:100%;
+
+} 
+/* topo*/
+#principal{
+	width:100%;
+	height:100%;
+}
+#conteudo{
+	width:100%;
+	padding-top:140px;
+	padding-bottom:50px;
+	margin:0 auto;
+	text-align:center;
+}
+/* topo*/
+.topo{
+height:140px;
+width:100%;
+position: fixed;
+top:0px;
+z-index:5555;
+  }
+/* logo*/
+#barra_logo{
+	background-image:url(../img/bg_logo.jpg);
+	height:95px;
+	width:100%;
+  }  
+#logo{
+	width:200px;
+	height:70px;
+	padding: 10px 0 0 20px;
+	float:left;
+  }  
+#usuario{
+	width:344px;
+	height:28px;
+	padding:5px 0 0 0;
+	margin: 0 2% 0 0;
+	float: right;
+	color:#28363C;
+	font-family:Arial, "Times New Roman", Times, serif;
+	font-size:11px;
+	font-weight:bold;
+	background-image:url(../img/bg_menu_usuario.png);
+	background-repeat:no-repeat;
+	text-align:center;
+  }
+  .sair{
+	color:red;
+	font-family:Arial, "Times New Roman", Times, serif;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration: none;
+  }
+ 
+
+/*login*/
+#body_login{
+	width:100%;
+	height:100%;
+	text-align: center;
+	background-image:url(../img/bg_body_login.jpg);
+	background-repeat:repeat-x;
+}
+.login {
+	background-image: url(../img/bg_login.png);
+	background-repeat: no-repeat;
+	height: 421px;
+	width: 406px;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-bottom: 65px;
+	margin-left: auto;
+	padding: 160px 0 0 50px;
+	text-align: left;
+}
+#formlogin input {
+	font-size:10px;
+	width: 285px;
+	height:20px;
+	line-height:20px;
+	font-weight:bold;
+}
+#formlogin .botao{
+	font-size:10px;
+	width: 285px;
+	height:25px;
+
+	font-weight:bold;
+}
+#formlogin {
+	margin-left: 10px;
+}
+/*span de mensagem*/
+.mensagem{
+	font-family:Arial, "Times New Roman", Times, serif;	
+z-index:99999;
+color:red;
+height:10px;
+   }
+/*label*/
+
+#direito{
+margin-left: 250px;
+}
+#direito_select{
+margin-left: 93px;
+
+}
+#sexo{
+ height:23px;
+width:200px; 
+  border:1px solid #28363C;
+}
+#sexo option{
+	width:200px;
+  border:1px solid #28363C;
+}
+#direita2{
+margin-left: 90px;
+margin-top: 0px;
+
+}
+/*inputs*/
+
+.hour{
+	margin:5px 0 5px 0;
+	height:15px;
+	line-height:15px;
+	background:none; 
+	border:1px solid #28363C;	
+}
+.inputsize{
+ margin:5px 0 5px 0; 
+ width:100px;
+ height:15px;
+ line-height:15px;
+ background:none; 
+ border:1px solid #28363C;
+}
+select{
+ margin:5px 0 5px 0; 
+ width:200px;
+ height:20px;
+ line-height:20px;
+ background:none; 
+ border:1px solid #28363C;
+ font-size:10px;
+}
+.selectsize{
+ margin:5px 0 5px 0; 
+ width:120px;
+ height:20px;
+ line-height:20px;
+ background:none; 
+ border:1px solid #28363C;
+ font-size:10px;
+}
+
+/* menu*/
+#menu{
+	padding:10px 0 0 0;
+	background-image:url(../img/bg_menu.jpg);
+	background-repeat: repeat-x;
+	height:45px;
+	width:100%;
+  }   
+#menu_ordena{
+	height:26px;
+	padding:9px 0 0 50px;
+}
+
+        #menu_drop { margin:0px; padding:0px; list-style-type:none; border:none; float: left; z-index:1000000; background-image:url(../img/bg_menu_itens.jpg); background-repeat:repeat-x; height:26px; line-height:26px; display:block; display:inline;}
+        #menu_drop a { color:#28363C; text-decoration:none; font-size:12px; font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; z-index:1000000; height:26px; line-height:26px; display:block; display:inline; width:100px;}
+        #menu_drop > li { width:100px; cursor:pointer; float:left; position:relative; z-index:1000000; text-align:center; height:26px; line-height:26px;display:inline;}
+
+        /* sub-menus*/
+        #menu_drop ul { padding:0px; margin:0px; display:block; display:inline; z-index:1000000; }
+        #menu_drop li ul { position:absolute; top:0px; margin-top:26px; width:100px; background-color:#B7C5CE; color:#004163; z-index:1000000;/* for IE */ display:none; }
+        #menu_drop li:hover ul { display:block; z-index:1000000;}
+        #menu_drop li ul li{ display:block; width:80px; margin: 0 0 0 10px; border-top: dotted 1px #606060; list-style-type:none; z-index:1000000;}
+        #menu_drop li ul li:first-child { border-top: none; }
+        #menu_drop li ul li a { display:block; color:#004163; z-index:1000000; margin-left:-10px;}
+        #menu_drop li ul li a:hover { color:#839CA9; z-index:1000000;}
+        /* corners*/
+        #menu_drop .corner_inset_left { position:absolute; top:0px; left:-12px;}
+        #menu_drop .corner_inset_right { position:absolute; top:0px; left:100px;}
+        #menu_drop .last { background:transparent none repeat scroll 0% 0%; margin:0px; padding:0px; border:none; position:relative; border:none; height:0px;}
+        #menu_drop .corner_left { position:absolute; left:0px; top:0px;}
+        #menu_drop .corner_right { position:absolute; left:82px; top:0px;}
+        #menu_drop .middle { position:absolute; left:18px; height: 20px; width: 65px; top:0px;}
+
+/*Conteudo do menu*/
+#menu_esq{
+	float:left;
+	width:26px;
+	height:26px;
+	background-image:url(../img/menu_esq.jpg);
+	background-repeat:no-repeat;
+}
+
+ 
+#menu_dir{
+	float:left;
+	height:26px;	
+	width:26px;
+	background-image:url(../img/menu_dir.jpg);
+}
+/*titulo*/
+.titulo{
+  color:#89DDBB;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size:18px;
+  font-weight:bold;
+  color:#28363C;
+  text-align:center;
+  padding-top:20px;
+  }
+.titulo_agenda{
+  color:#89DDBB;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size:18px;
+  font-weight:bold;
+  color:#28363C;
+  text-align: right;
+  padding:20px 0 20px 0;
+  width:60%;
+  float: left;
+  }
+#alinha_titulo_agenda  {
+	width:100%;
+	height:50px;
+}
+#linha_alinha{
+	clear:both;
+	height:2px;
+}
+/*corpo*/
+.corpo{
+    width:80%;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	text-align:center;
+	margin: 0 auto;	
+}
+.corpo_foto{
+    width:95%;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	text-align:center;
+	margin: 0 auto;	
+}
+
+#alinha_corpo{
+    width:300px;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	text-align: left;
+}
+#alinha_corpo_eleitor{
+    width:900px;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	text-align: left;
+}
+#outraFilial{
+	text-align:right;
+	padding:15px 0 20px 0;
+	float:right;
+}
+/*tabela*/
+
+.table {
+	width:100%;
+	border-top:1px solid #DBE4E8;
+	border-right:1px solid #DBE4E8;
+	margin:1em auto;
+	border-collapse:collapse;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;		
+	  }
+.table_imp {
+	width:100%;
+	border:1px solid #000;
+	border-bottom:1px solid #DBE4E8;
+	border-right:1px solid #DBE4E8;
+	border-collapse:collapse;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;		
+	  }
+	  
+.tabela{
+	width:100%;
+	border-collapse: separate;
+	padding-left:10px;
+	background-image:url(imagens/bg_dest.png);
+	
+}
+
+.tabela td{
+	height:70px;
+}
+
+.tabela_agendamento{
+}
+
+.tabela_inserir {
+	margin:1em auto;
+	border:none;
+	  }	 
+.tabela_sem_borda_meses{
+	border:none;
+	background-color:#555;
+	width:100%;
+}  
+.tabela_sem_borda{
+	border:none;
+}
+.tabela_sem_borda td{
+	padding:0px;
+	height:20px;
+}
+.odd {
+	background:url(../img/background.gif);
+	}
+.column1{
+	background:#E0E8EB;
+	}
+.column1_titulo{
+	background:#C8D7DD;
+	}	
+.table_imp td {
+	border-bottom: 1px solid #000;
+	border-left:1px solid #000;
+	text-align:center;
+	
+	}				
+.table td {
+	border-bottom: 1px solid #DBE4E8;
+	border-left:1px solid #DBE4E8;
+	text-align:center;
+	height:35px;
+	}				
+th {
+	font-weight:bold;
+	border-bottom: 1px solid #DBE4E8;
+	border-left:1px solid #DBE4E8;
+	padding:.3em 1em;
+	}	
+.table_imp th {
+	font-weight:bold;
+	border-bottom: 1px solid #000;
+	border-left:1px solid #000;
+	
+	}	
+
+.tabela_form{
+	border-collapse: separate;
+	border-spacing: 5px;
+	background-color:#ECF0F2;
+	padding: 20px;	
+}
+
+.tabela_dia {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+}
+.texto_tit {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#000000;
+}
+.css_marcado{
+	background-color:#CAD8DD;
+}
+#mais_agendamentos{
+	background-color:#EDF1F3;
+	text-align:right;
+}
+.estilo_dia{
+	width:20%;
+	padding:5px;
+	float:left;
+}
+.tabela_agen{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	border-bottom: 1px;
+	position:relative;
+	border-bottom:1px #EDF1F3 solid;
+}
+.texto_legenda{
+	font-size:9px;
+	color: #000;
+}
+
+#alinha_dia{
+	width:100%;
+	height:25px;
+	position:relative;
+}
+
+#inserir_agend{
+	width:15px;;
+	height:15px;
+	line-height:15px;
+	float:right;
+	padding:4px;
+	text-align:right;
+}
+
+a.meses:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color: #638C9C;
+	font-weight:bold;
+}
+a.meses:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color: #638C9C;
+	font-weight:bold;	
+}
+
+a.meses:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration: underline;
+	color: #638C9C;
+	font-weight:bold;	
+}
+a.meses:active{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color: #638C9C;
+	font-weight:bold;	
+}
+/*----------------------------------------------------------------*/
+#botoes{
+	width:100%;
+	height:35px;
+	z-index:-50000000;
+}
+#botaoInserir{
+width:31px;
+height:35px;
+background-image:url(../img/inserir.jpg);
+cursor:pointer;
+margin-left:10px;
+float: right;
+}
+#botaoDesativar{
+width:31px;
+height:35px;
+background-image:url(../img/icon_block.jpg);
+cursor:pointer;
+margin-left:10px;
+float: right;
+}
+#botaoExcluir{
+width:27px;
+height:35px;
+background-image:url(../img/excluir.jpg);
+cursor:pointer;
+margin-left:10px;
+float: right;
+}
+#botaoImprimir{
+width:30px;
+height:30px;
+background-image:url(../img/imprimir.png);
+cursor:pointer;
+margin-left:10px;
+float: right;
+}
+#botaoPesquisa{
+width:30px;
+height:30px;
+background-image:url(../img/imprimir.png);
+cursor:pointer;
+margin-left:10px;
+float:right;
+}
+#botaoCopiar{
+width:27px;
+height:35px;
+background-image:url(../img/copiar.png);
+cursor:pointer;
+margin-left:10px;
+float: right;
+}
+#fechar{
+	background-image: url(../img/close.png);
+	position: absolute; 
+	top: 10px; 
+	right:10px; 
+	width: 80px; 
+	height: 36px;
+}
+#fecharaddcliente{
+	background-image: url(../img/close.png);
+	position: absolute; 
+	top: 10px; 
+	right:10px; 
+	width: 80px; 
+	height: 36px;
+}
+
+#divaddcliente{
+	background-color:#F5F7F8; 
+	width:100%;
+	height:150%;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	z-index:99999;
+	display:none;	
+}
+
+
+#fecharaddbolo{
+	background-image: url(../img/close.png);
+	position: absolute; 
+	top: 10px; 
+	right:10px; 
+	width: 80px; 
+	height: 36px;
+}
+#fecharaddtema{
+	background-image: url(../img/close.png);
+	position: absolute; 
+	top: 10px; 
+	right:10px; 
+	width: 80px; 
+	height: 36px;
+}
+a.dcontexto{
+  position:relative; 
+  font-family:Arial, "Times New Roman", Times, serif;
+  color:#000000;
+  text-decoration:none;
+  width:100%;
+  padding-left:5px;
+  z-index:0;
+  font-size:10px;  
+  }
+  a.dcontexto:hover{
+  background:transparent;
+  z-index:25; 
+  }
+  a.dcontexto span{display: none}
+  a.dcontexto:hover span{ 
+  display:block;
+  position:absolute;
+  top:-34px;
+  text-align:center;
+  font-size:10px;
+  font-family:Arial, "Times New Roman", Times, serif;
+  padding:5px;
+  background-color:#BEBEBE;
+  color:#000;
+  z-index:9999999;
+  }
+  
+  
+a.dcontexto_agenda{
+  position:relative; 
+  font-family:Arial, "Times New Roman", Times, serif;
+  color:#000000;
+  text-decoration:none;
+  width:100%;
+  padding-left:5px;
+  z-index:0;
+  font-size:10px;  
+  }
+  a.dcontexto_agenda:hover{
+  background:transparent;
+  z-index:25; 
+  }
+  a.dcontexto_agenda span{display: none}
+  a.dcontexto_agenda:hover span{ 
+  display:block;
+  position:absolute;
+  top:-34px;
+  text-align:center;
+  font-size:10px;
+  font-family:Arial, "Times New Roman", Times, serif;
+  padding:5px;
+  background-color:#91AEB9;
+  color:#000;
+  z-index:9999999;
+  }  
+ 
+#paginacao{
+	width:100%;
+	height:20px;
+	margin-bottom:40px;	
+}
+/*rodape*/
+#rodape{
+	width:100%;
+	height:45px;
+	position:fixed;
+	bottom:0px;
+	background-image:url(../img/bg_rodape.jpg);
+	background-repeat:repeat-x;
+	text-align:center;
+	z-index:5555;	
+
+}
+#menu_rodape{
+	width:574px;
+	height:28px;
+	margin: 0 auto;
+	background-image:url(../img/bg_menu_rodape.png);
+	background-repeat:repeat-x;
+	text-align:center;
+	font-family:Arial, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#28363C;
+	font-weight:bold;
+	line-height:24px;
+}
+/* Divs para aparecer img do Bolo e Tema */
+#editar_img{
+	width:100px;
+ 	height:100px; 
+    border:5px solid #ddd;
+	float:left;
+	margin-left:30px;
+}
+#editar_img img{
+	width:100px;
+ 	height:100px;
+}
+#filtroCliente{
+	top:190px;
+	text-align:left;
+	position:absolute;
+	
+}
+
+/* editar agendamento */
+#cliente_produtos{
+	width:800px;
+	height:140px;
+	}
+#cliente_info{
+	text-align:left;
+	position:absolute;
+	float:left;
+	margin-left:60px;
+	*margin-left:-800px;
+	*margin-top:-3px;
+	}
+#agendamento_editar{
+	height:500px;
+	margin-left:80px;
+	}
+#produto_info{
+	float:left;
+	width:200px;
+	text-align:left;
+	margin-left:500px;
+	margin-right:100px;
+	}
+#obs_cliente{
+	text-align:left;
+	margin-left:60px;
+	float:left;
+	}
+#resposta{
+	text-align:left;
+	margin-left:60px;
+	margin-top:20px;
+	width:850px;
+	float:left;
+	}	
+/* div*/
+
+/* ------ div abre conteudo agenda --------*/
+#formagenda{
+	background-color:#F5F7F8; 
+	width:100%;
+	height:150%;
+	position: absolute;
+	top: 138px;
+	left:0px;
+	z-index:0;
+	display:none;	
+}
+
+/* ------------- css dialog Eliakim Ramos-------------------- */
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+.ui-dialog .ui-state-error { padding: .3em; }
+#dialog-form{z-index:99999}
+
+/*--------------css validar os campos Everton Pessoa -----------*/
+label.error{ padding-left: 3px; color:#FF0000;}	
+
+/*--------------ABAS Everton Pessoa -----------*/
+
+div.aba {
+	text-align: justify;
+	margin-bottom: 20px;
+	padding: 10px 15px;	
+}
+
+#nav {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 3px 0;
+}
+
+#nav li {
+	list-style: none;
+	margin-right: 6px;
+	display: inline;
+}
+
+#nav li a {
+	padding: 3px 6px;
+	border: 1px solid #778;
+	border-bottom: none;
+	background: #dde;
+	color: #333;
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: #000;
+	background: #aae;
+	border-color: #227;
+}
+
+#nav li a.corrente {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+

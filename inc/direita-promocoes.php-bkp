@@ -1,0 +1,53 @@
+<div id="main-right">
+<div class="promo-right">
+  <img src="images/promocoes/miniaturas/01.jpg" width="207" height="138" alt="01" />
+  <div class="precos-lateral">
+ 		 <div class="transcrito"><span>De:</span>R$ 300,00</div>
+         <div><span>Por:</span>R$ 220,00</div>
+  </div>
+  <div class="text-promo-lateral">
+  skdjaskdjsa dkjsa dksaj dksajd ksaj jdasdsj kjdsad dkjas dksa
+  d jaskdsaj djsakd askjdas kjdas kjas dkajs dksajd sakj sakjd
+  ...</div>
+</div>  <!-- promo-right -->
+
+<div class="promo-right">
+  <img src="images/promocoes/miniaturas/01.jpg" width="207" height="138" alt="01" />
+  <div class="precos-lateral">
+ 		 <div class="transcrito"><span>De:</span>R$ 300,00</div>
+         <div><span>Por:</span>R$ 220,00</div>
+  </div>
+  <div class="text-promo-lateral">
+  skdjaskdjsa dkjsa dksaj dksajd ksaj jdasdsj kjdsad dkjas dksa
+  d jaskdsaj djsakd askjdas kjdas kjas dkajs dksajd sakj sakjd
+  ...</div>
+</div>  <!-- promo-right -->
+
+
+<div class="promo-right">
+  <img src="images/promocoes/miniaturas/01.jpg" width="207" height="138" alt="01" />
+  <div class="precos-lateral">
+ 		 <div class="transcrito"><span>De:</span>R$ 300,00</div>
+         <div><span>Por:</span>R$ 220,00</div>
+  </div>
+  <div class="text-promo-lateral">
+  skdjaskdjsa dkjsa dksaj dksajd ksaj jdasdsj kjdsad dkjas dksa
+  d jaskdsaj djsakd askjdas kjdas kjas dkajs dksajd sakj sakjd
+  ...</div>
+</div>  <!-- promo-right -->
+
+<div class="promo-right">
+  <img src="images/promocoes/miniaturas/01.jpg" width="207" height="138" alt="01" />
+  <div class="precos-lateral">
+ 		 <div class="transcrito"><span>De:</span>R$ 300,00</div>
+         <div><span>Por:</span>R$ 220,00</div>
+  </div>
+  <div class="text-promo-lateral">
+  skdjaskdjsa dkjsa dksaj dksajd ksaj jdasdsj kjdsad dkjas dksa
+  d jaskdsaj djsakd askjdas kjdas kjas dkajs dksajd sakj sakjd
+  ...</div>
+</div>  <!-- promo-right -->
+
+
+
+</div><!-- fim div main-right-->
