@@ -2,8 +2,8 @@
 abstract class Base {
 	public function conectar(){
 		
-	//$servidor1 = "localhost";$usuario_db1 ="root";$senha_db1 ="";$banco1 ="pexinxa";
-	$servidor1 = "localhost";$usuario_db1 ="edegr109_bruno";$senha_db1 ="@edegraca12@";$banco1 ="edegr109_edegraca";
+	$servidor1 = "localhost";$usuario_db1 ="root";$senha_db1 ="";$banco1 ="pexinxa";
+	//$servidor1 = "localhost";$usuario_db1 ="edegr109_bruno";$senha_db1 ="@edegraca12@";$banco1 ="edegr109_edegraca";
 	
 	
 		

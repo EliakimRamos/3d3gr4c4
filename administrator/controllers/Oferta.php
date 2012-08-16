@@ -34,6 +34,48 @@ switch ($tela) {
 				}
 				$retorno = $oferta->inserirOferta($_POST);
 				if($retorno){
+					foreach ($_POST['Regulamento'] as $Dadosregulamentogeral){
+							$cidadeOferta['id_regra'] = $Dadosregulamentogeral;
+							$cidadeOferta['id_ofertas'] = $retorno;
+							$ObjCidades->inserirregraoferta($cidadeOferta);
+					}
+					//var_dump($_POST['id_cidade_oferta']);die;
+					if(empty($_POST['id_cidade_oferta'][0])){
+							$cidadeOferta['id_cidade'] = 1;
+							$cidadeOferta['id_oferta'] = $retorno;
+							$ObjCidades->inserirEdegracaCidade($cidadeOferta);
+					}else{
+						foreach ($_POST['id_cidade_oferta'] as $DadosCidades){
+								$cidadeOferta['id_cidade'] = $DadosCidades;
+								$cidadeOferta['id_oferta'] = $retorno;
+								$ObjCidades->inserirEdegracaCidade($cidadeOferta);
+						}
+					}
+					
+					if($retorno){
+						$_SESSION['alert'] = "Inserida com sucesso!";			
+					}else{
+						$_SESSION['alert'] = "Problemas na inser��o";
+					}
+					
+					if($_SESSION['comercial']){
+						//header("Location: ../../comercial/index.php?p=ofertaGrid");
+						echo'<script language="JavaScript" type="text/javascript">
+	  							window.location = "../index.php?pac='.$pacote.'&tela='.$tela.'Grid";
+							</script>';
+					}else{
+						//header("Location: ../index.php?pac=".$pacote."&tela=".$tela."Grid");
+						echo'<script language="JavaScript" type="text/javascript">
+	  							window.location = "../index.php?pac='.$pacote.'&tela='.$tela.'Grid";
+							</script>';
+					}
+					
+					
+					
+					
+					
+					
+					
 						if(!empty($_FILES['arquivo'])){
 							 $up = $handle->UploadArquivo($_FILES['arquivo'],"../uploads/",$tipos);
 							if(!$up){
@@ -73,52 +115,9 @@ switch ($tela) {
 								$retornoArquivo = $oferta->inserirOfertaImage($_POST);
 							}
 						}
-									
-				/*if(!empty($_SESSION['images'])){
-					foreach($_SESSION['images'] as $image){
-						$_POST['id_oferta'] = $retorno;
-						$_POST['image'] = $image;
-						$oferta->inserirOfertaImage($_POST);
-					}
-				}
-				unset($_SESSION['images']);
-				*/
 				}
 				
-				foreach ($_POST['Regulamento'] as $Dadosregulamentogeral){
-						$cidadeOferta['id_regra'] = $Dadosregulamentogeral;
-						$cidadeOferta['id_ofertas'] = $retorno;
-						$ObjCidades->inserirregraoferta($cidadeOferta);
-				}
-				if(empty($_POST['id_cidade_oferta'][0])){
-						$cidadeOferta['id_cidade'] = 1;
-						$cidadeOferta['id_oferta'] = $retorno;
-						$ObjCidades->inserirEdegracaCidade($cidadeOferta);
-				}else{
-					foreach ($_POST['id_cidade_oferta'] as $DadosCidades){
-							$cidadeOferta['id_cidade'] = $DadosCidades;
-							$cidadeOferta['id_oferta'] = $retorno;
-							$ObjCidades->inserirEdegracaCidade($cidadeOferta);
-					}
-				}
 				
-				if($retorno){
-					$_SESSION['alert'] = "Inserida com sucesso!";			
-				}else{
-					$_SESSION['alert'] = "Problemas na inser��o";
-				}
-				
-				if($_SESSION['comercial']){
-					//header("Location: ../../comercial/index.php?p=ofertaGrid");
-					echo'<script language="JavaScript" type="text/javascript">
-  							window.location = "../index.php?pac='.$pacote.'&tela='.$tela.'Grid";
-						</script>';
-				}else{
-					//header("Location: ../index.php?pac=".$pacote."&tela=".$tela."Grid");
-					echo'<script language="JavaScript" type="text/javascript">
-  							window.location = "../index.php?pac='.$pacote.'&tela='.$tela.'Grid";
-						</script>';
-				}
 			exit;
 			break;
 			

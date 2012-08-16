@@ -92,7 +92,6 @@ if($confirmacao == false){?>
             <li><a href="?pac=oferta&tela=ofertaGrid">Listar</a></li>
             <li><a href="?pac=oferta&tela=ofertaForm&op=Inserir">Cadastrar</a></li>
             <li><a href="?pac=oferta&tela=Agendar">Agendar</a></li>
-            <li><a href="?pac=oferta&tela=Agendar">Ofertas Cadastradas</a></li>
             
           </ul>
         </li>
@@ -117,11 +116,24 @@ if($confirmacao == false){?>
 				<a href="?pac=relatorio&tela=relatorioGrid">Compras</a> 
 				</li>
 					<li><a href="?pac=relatorio&tela=relatorioFinanceiro">Financeiro</a></li>
-					<li><a href="?pac=relatorio&tela=checkvalor">Fraude</a></li>
-					<li><a href="?pac=relatorio&tela=comissao">Comiss�o</a></li>
+					<li><a href="?pac=relatorio&tela=comissao">Comissão</a></li>
 			</ul>
 		</li>	
 	<?php }?>
+	<li><a href="#">Agenda hotel</a>
+			<ul>
+				<li>
+				<a href="?pac=agenda&tela=agendaGrid">ver agenda</a> 
+				</li>
+			</ul>
+		</li>	
+	<li><a href="#">Links ofertas futuras </a>
+			<ul>
+				<li>
+				<a href="?pac=nextoferta&tela=nextofertaGrid">ver links</a> 
+				</li>
+			</ul>
+		</li>	
      </ul> 
 </div> 
 <!--fim div menu-->
